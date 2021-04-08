@@ -67,6 +67,8 @@ header {
   background-color: #eeeb34;
 }
 
+/* MAIN */
+
 .main {
   height: 35%;
   width: 95%;
@@ -121,14 +123,14 @@ section {
 /* ASIDE */
 
 aside {
-  height: 73%;
+  height: 63%;
   width: 30%;
   background-color: #d43542;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 1em;
+  padding-top: 2.5em;
 }
 
 .content1 {
