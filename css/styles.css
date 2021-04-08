@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* HEADER AND NAV */
+.header-container {
+  height: 35%;
+  width: 95%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NAV */
+
+nav {
+  height: 35%;
+  width: 97%;
+  background-color: #382783;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box1 {
+  height: 35%;
+  width: 15%;
+  background-color: #f03f57;
+}
+
+.box2 {
+  height: 35%;
+  width: 60%;
+  background-color: #f03f57;
+}
+
+.box3 {
+  height: 35%;
+  width: 15%;
+  background-color: #f03f57;
+}
+
+/* HEADER */
+header {
+  height: 35%;
+  width: 97%;
+  background-color: #df831a;
+  margin: 15px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box4 {
+  height: 35%;
+  width: 95%;
+  background-color: #eeeb34;
+}
+
+.main {
+  height: 35%;
+  width: 95%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* SECTION */
+
+section {
+  height: 71%;
+  width: 65%;
+  background-color: #524374;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 0;
+}
+
+.art1 {
+  height: 15%;
+  width: 45%;
+  background-color: #1463ad;
+}
+.art2 {
+  height: 15%;
+  width: 45%;
+  background-color: #1463ad;
+}
+
+.art3 {
+  height: 15%;
+  width: 45%;
+  background-color: #1463ad;
+}
+
+.art4 {
+  height: 15%;
+  width: 45%;
+  background-color: #1463ad;
+}
+
+.art5 {
+  height: 15%;
+  width: 94%;
+  background-color: #55a3e2;
+}
+
+/* ASIDE */
+
+aside {
+  height: 69%;
+  width: 30%;
+  background-color: #d43542;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
+
+.content1 {
+  height: 15%;
+  width: 88%;
+  background-color: #fff066;
+  margin: 0 0 15px 0;
+}
+
+.content2 {
+  height: 15%;
+  width: 88%;
+  background-color: #fff066;
+}
+
+/*FOOTER*/
+
+.footer-container {
+  height: 10%;
+  width: 95%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 40%;
+  width: 97%;
+  background-color: #e0b00f;
+}
