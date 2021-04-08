@@ -55,7 +55,7 @@ header {
   height: 35%;
   width: 97%;
   background-color: #df831a;
-  margin: 15px 0 0 0;
+  margin: 1em 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,14 +79,14 @@ header {
 /* SECTION */
 
 section {
-  height: 71%;
+  height: 65%;
   width: 65%;
   background-color: #524374;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 0 10px 0;
+  padding: 1em 0 1em 0;
 }
 
 .art1 {
@@ -121,21 +121,21 @@ section {
 /* ASIDE */
 
 aside {
-  height: 69%;
+  height: 73%;
   width: 30%;
   background-color: #d43542;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 25px;
+  padding-top: 1em;
 }
 
 .content1 {
   height: 15%;
   width: 88%;
   background-color: #fff066;
-  margin: 0 0 15px 0;
+  margin: 0 0 1em 0;
 }
 
 .content2 {
@@ -147,7 +147,7 @@ aside {
 /*FOOTER*/
 
 .footer-container {
-  height: 10%;
+  height: 12%;
   width: 95%;
   background-color: black;
   display: flex;
@@ -156,7 +156,7 @@ aside {
 }
 
 footer {
-  height: 40%;
+  height: 35%;
   width: 97%;
   background-color: #e0b00f;
 }
