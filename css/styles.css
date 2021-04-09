@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 /* NAV */
@@ -28,26 +29,30 @@ nav {
   width: 97%;
   background-color: #382783;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px;
 }
 
 .box1 {
   height: 35%;
   width: 15%;
   background-color: #f03f57;
+  margin: auto;
 }
 
 .box2 {
   height: 35%;
   width: 60%;
   background-color: #f03f57;
+  margin: auto;
 }
 
 .box3 {
   height: 35%;
   width: 15%;
   background-color: #f03f57;
+  margin: auto;
 }
 
 /* HEADER */
@@ -59,11 +64,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .box4 {
   height: 35%;
-  width: 95%;
+  width: 97%;
   background-color: #eeeb34;
 }
 
@@ -76,72 +82,77 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5px;
 }
 
 /* SECTION */
 
 section {
-  height: 65%;
+  height: 80%;
   width: 65%;
   background-color: #524374;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1em 0 1em 0;
+  padding: 5px;
 }
 
 .art1 {
   height: 15%;
-  width: 45%;
+  width: 46%;
   background-color: #1463ad;
+  margin: auto;
 }
 .art2 {
   height: 15%;
-  width: 45%;
+  width: 46%;
   background-color: #1463ad;
+  margin: auto;
 }
 
 .art3 {
   height: 15%;
-  width: 45%;
+  width: 46%;
   background-color: #1463ad;
+  margin: auto;
 }
 
 .art4 {
   height: 15%;
-  width: 45%;
+  width: 46%;
   background-color: #1463ad;
+  margin: auto;
 }
 
 .art5 {
   height: 15%;
-  width: 94%;
+  width: 96%;
   background-color: #55a3e2;
 }
 
 /* ASIDE */
 
 aside {
-  height: 63%;
+  height: 73%;
   width: 30%;
   background-color: #d43542;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 2.5em;
+  padding-top: 1.5em;
 }
 
 .content1 {
-  height: 15%;
+  height: 16%;
   width: 88%;
   background-color: #fff066;
   margin: 0 0 1em 0;
 }
 
 .content2 {
-  height: 15%;
+  height: 16%;
   width: 88%;
   background-color: #fff066;
 }
@@ -155,6 +166,7 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 footer {
