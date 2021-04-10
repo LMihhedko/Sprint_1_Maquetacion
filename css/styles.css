@@ -103,7 +103,7 @@ aside {
 /*FOOTER*/
 
 .footer-container {
-  min-height: 25px;
+  min-height: 20px;
   background-color: black;
   margin-top: 20px;
   padding: 20px;
@@ -112,4 +112,75 @@ aside {
 footer {
   min-height: 20px;
   background-color: #e6af2e;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .main {
+    background-color: #feff03;
+    flex-direction: column;
+  }
+
+  section {
+    margin-right: 0px;
+  }
+
+  aside {
+    margin-top: 20px;
+  }
+}
+
+/* MÓVIL */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .box2 {
+    margin: 20px 0px;
+  }
+
+  .main {
+    background-color: #feff03;
+    flex-direction: column;
+  }
+
+  section {
+    flex: 0 1 100%;
+    margin-right: 0px;
+    background-color: #09506f;
+  }
+
+  .child1 {
+    height: 60px;
+    flex-direction: column;
+  }
+
+  .subchild1 {
+    margin-right: 0px;
+    background-color: #62959c;
+  }
+
+  .subchild2 {
+    background-color: #62959c;
+    margin-top: 20px;
+  }
+
+  .child3 {
+    background-color: #a3ddcb;
+  }
+
+  aside {
+    background-color: #fd7b54;
+    margin-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .child3 {
+    background-color: #fdb36b;
+  }
 }
