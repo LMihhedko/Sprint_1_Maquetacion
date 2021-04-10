@@ -1,7 +1,9 @@
 /* HEADER AND NAV */
 .header-container {
-  min-height: 25px;
-  background-color: black;
+  max-height: 300px;
+  background-image: url("../img/fons.jpg");
+  background-position: center center;
+  background-size: cover;
   padding: 20px;
 }
 
@@ -9,35 +11,96 @@
 
 nav {
   min-height: 20px;
-  background-color: #2d4059;
   display: flex;
   padding: 20px;
 }
 
+label,
+input {
+  display: none;
+}
+
 .box1 {
   min-height: 20px;
-  background-color: #ea5455;
   flex: 0 1 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 70px;
+}
+
+.social {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social:hover {
+  background-color: #ff8989;
+  border-radius: 5px;
 }
 
 .box2 {
   min-height: 20px;
-  background-color: #ea5455;
   flex: 0 1 70%;
   margin: 0 20px;
+}
+
+/* LINKS */
+
+i {
+  color: #6d6b6b;
+}
+
+.icon-letters {
+  color: #6d6b6b;
+  display: inline;
+  margin: 0 10px 0 10px;
+  font-family: "Century Gothic", Times, serif;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ff8989;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
 }
 
 /* HEADER */
 header {
   min-height: 25px;
-  background-color: #f07b3f;
   margin: 1em 0 0 0;
   padding: 20px;
+  background-color: #00000010;
 }
 
 .box3 {
   min-height: 20px;
-  background-color: #fed460;
+}
+
+h1 {
+  color: rgba(255, 118, 118, 0.699);
+  text-align: center;
 }
 
 /* MAIN */
@@ -144,6 +207,10 @@ footer {
     margin: 20px 0px;
   }
 
+  h1 {
+    font-size: 1.6em;
+  }
+
   .main {
     background-color: #feff03;
     flex-direction: column;
@@ -182,5 +249,69 @@ footer {
 
   .child3 {
     background-color: #fdb36b;
+  }
+
+  .header-container {
+    background-image: url("../img/fons_petit.jpg");
+  }
+
+  /* MENU HAMBURGUESA */
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    width: 50%;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+
+  /* ESTILOS  LINKS MENU HAMBURGUESA */
+
+  li {
+    display: block;
+    width: 100%;
+    border: 1px solid #6e6e69;
+    margin: 2px 15px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  i {
+    font-size: 10px;
+  }
+
+  .icon-letters {
+    font-size: 0.6em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 160px;
   }
 }
