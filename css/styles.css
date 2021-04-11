@@ -107,7 +107,7 @@ h1 {
 
 .main {
   min-height: 25px;
-  background-color: black;
+  background-color: #dcdcdc;
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -120,7 +120,7 @@ section {
   min-height: 25px;
   margin-right: 20px;
   padding: 20px;
-  background-color: #4e4e6a;
+  background-color: #dcdcdc;
   display: flex;
   flex: 0 1 66%;
   flex-direction: column;
@@ -133,14 +133,42 @@ section {
 }
 
 .subchild1 {
-  background-color: #1f6cb0;
+  height: 380px;
   flex: 0 1 50%;
   margin-right: 20px;
+  /* background-image: url("../img/cerezo.jpg");
+  background-size: cover; */
+  background-color: #ececec;
+  border: 5px solid #ececec;
 }
 
 .subchild2 {
-  background-color: #1f6cb0;
+  height: 380px;
   flex: 0 1 50%;
+  /* background-image: url("../img/templo.jpg");
+  background-size: cover; */
+  background-color: #ececec;
+  border: 5px solid #ececec;
+}
+
+.subchild3 {
+  height: 380px;
+  flex: 0 1 50%;
+  margin-right: 20px;
+  /* background-image: url("../img/geishas.jpg");
+  background-size: cover; */
+  background-color: #ececec;
+  border: 5px solid #ececec;
+}
+
+.subchild4 {
+  height: 380px;
+  flex: 0 1 50%;
+  margin-right: 20px;
+  /* background-image: url("../img/ciudad.jpg");
+  background-size: cover; */
+  background-color: #ececec;
+  border: 5px solid #ececec;
 }
 
 .child2 {
@@ -152,6 +180,59 @@ section {
   min-height: 20px;
   background-color: #feea85;
   margin-bottom: 20px;
+}
+
+/* ARTICULOS */
+
+.text-container {
+  background-color: #f73f52;
+  height: 30px;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
+
+.image-text {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 4px;
+  padding-top: 16px;
+}
+
+.image-container {
+  position: relative;
+  height: 250px;
+}
+
+.date {
+  color: white;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: -13px;
+  left: 5px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+/* READ MORE */
+
+.more {
+  display: none;
+}
+
+button {
+  background: none;
+  color: rgb(83, 83, 83);
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 /* ASIDE */
@@ -194,6 +275,11 @@ footer {
   aside {
     margin-top: 20px;
   }
+
+  .image-container {
+    position: relative;
+    height: 210px;
+  }
 }
 
 /* MÓVIL */
@@ -212,29 +298,37 @@ footer {
   }
 
   .main {
-    background-color: #feff03;
+    height: auto;x;
+    background-color: #d3d3b4;
     flex-direction: column;
   }
 
   section {
-    flex: 0 1 100%;
+    display: inline-block;
+    flex: 0 1 auto;
     margin-right: 0px;
-    background-color: #09506f;
+    background-color: #7a7f81;
   }
 
   .child1 {
-    height: 60px;
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
-  .subchild1 {
+  .subchild1,
+  .subchild2,
+  .subchild3,
+  .subchild4 {
     margin-right: 0px;
     background-color: #62959c;
   }
 
-  .subchild2 {
-    background-color: #62959c;
-    margin-top: 20px;
+  .subchild4 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.7em;
   }
 
   .child3 {
@@ -245,14 +339,23 @@ footer {
     background-color: #fd7b54;
     margin-top: 20px;
     padding-bottom: 0px;
-  }
-
-  .child3 {
-    background-color: #fdb36b;
+    flex: 0 1 10%;
   }
 
   .header-container {
     background-image: url("../img/fons_petit.jpg");
+  }
+
+  .image-article {
+    width: 60%;
+  }
+
+  .image-container {
+    height: 145px;
+  }
+
+  .text-container {
+    width: 60%;
   }
 
   /* MENU HAMBURGUESA */

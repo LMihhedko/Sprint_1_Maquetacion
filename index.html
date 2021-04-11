@@ -7,6 +7,24 @@
      <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <script>
+        function myFunction() {
+                var dots = document.querySelector('.dots');
+                var moreText = document.querySelector('.more');
+                var btnText = document.querySelector(".myBtn");
+
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Leer más";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Leer menos";
+                    moreText.style.display = "inline";
+                }
+            }
+    </script>
 </head>
 
 <body>
@@ -66,15 +84,51 @@
         <section>
             <article class = 'child1'>
                 <div class = 'subchild1'>
-                    <!-- <img src="img/cerezo.jpg" width = '500px'> -->
+                    <div class ='image-container'>
+                        <img class ='image-article' src='img/cerezo.jpg' width ='100%'>
+                    <div class= 'text-container'>
+                        <div class='date'>5 de marzo de 2019</div>
+                        <div class= 'image-text'>CULTURA</div>
+                    </div>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
                 </div>
                 <div class = 'subchild2'>
-                    <!-- <img src="img/templo.jpg" width = '500px'> -->
+                    <div class ='image-container'>
+                        <img class ='image-article' src='img/templo.jpg' width ='100%'>
+                    <div class= 'text-container'>
+                        <div class='date'>6 de marzo de 2019</div>
+                        <div class= 'image-text'>CULTURA</div>
+                    </div>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction()" class="myBtn">Leer más...</button>  
                 </div>
             </article>
             <article class = 'child1'>
-                <div class = 'subchild1'></div>
-                <div class = 'subchild2'></div>
+                <div class = 'subchild3'>
+                    <div class ='image-container'>
+                        <img class ='image-article' src='img/ciudad.jpg' width ='100%'>
+                    <div class= 'text-container'>
+                        <div class='date'>8 de marzo de 2019</div>
+                        <div class= 'image-text'>CULTURA</div>
+                    </div>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
+                </div>
+                <div class = 'subchild4'>
+                    <div class ='image-container'>
+                        <img class ='image-article' src='img/geishas.jpg' width ='100%'>
+                    <div class= 'text-container'>
+                        <div class='date'>10 de marzo de 2019</div>
+                        <div class= 'image-text'>CULTURA</div>
+                    </div>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
+                </div>
             </article>
             <article class = 'child2'></article>
         </section>
