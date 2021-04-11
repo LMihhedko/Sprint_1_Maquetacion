@@ -132,41 +132,13 @@ section {
   display: flex;
 }
 
-.subchild1 {
-  height: 380px;
-  flex: 0 1 50%;
-  margin-right: 20px;
-  /* background-image: url("../img/cerezo.jpg");
-  background-size: cover; */
-  background-color: #ececec;
-  border: 5px solid #ececec;
-}
-
-.subchild2 {
-  height: 380px;
-  flex: 0 1 50%;
-  /* background-image: url("../img/templo.jpg");
-  background-size: cover; */
-  background-color: #ececec;
-  border: 5px solid #ececec;
-}
-
-.subchild3 {
-  height: 380px;
-  flex: 0 1 50%;
-  margin-right: 20px;
-  /* background-image: url("../img/geishas.jpg");
-  background-size: cover; */
-  background-color: #ececec;
-  border: 5px solid #ececec;
-}
-
+.subchild1,
+.subchild2,
+.subchild3,
 .subchild4 {
   height: 380px;
   flex: 0 1 50%;
   margin-right: 20px;
-  /* background-image: url("../img/ciudad.jpg");
-  background-size: cover; */
   background-color: #ececec;
   border: 5px solid #ececec;
 }
@@ -298,7 +270,7 @@ footer {
   }
 
   .main {
-    height: auto;x;
+    height: auto;
     background-color: #d3d3b4;
     flex-direction: column;
   }
