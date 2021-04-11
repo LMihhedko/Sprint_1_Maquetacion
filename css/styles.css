@@ -136,7 +136,7 @@ section {
 .subchild2,
 .subchild3,
 .subchild4 {
-  height: 380px;
+  height: 450px;
   flex: 0 1 50%;
   margin-right: 20px;
   background-color: #ececec;
@@ -146,6 +146,9 @@ section {
 .child2 {
   min-height: 20px;
   background-color: #70a3c4;
+  margin-right: 20px;
+  background-color: #ececec;
+  border: 5px solid #ececec;
 }
 
 .child3 {
@@ -177,6 +180,11 @@ section {
   height: 250px;
 }
 
+.image-container-art5 {
+  position: relative;
+  height: 525px;
+}
+
 .date {
   color: white;
   font-size: 0.8em;
@@ -193,7 +201,10 @@ p {
 
 /* READ MORE */
 
-.more {
+#more1,
+#more2,
+#more3,
+#more4 {
   display: none;
 }
 
@@ -303,6 +314,11 @@ footer {
     font-size: 0.7em;
   }
 
+  .child2 {
+    margin-right: 0px;
+    background-color: #62959c;
+  }
+
   .child3 {
     background-color: #a3ddcb;
   }
@@ -322,7 +338,15 @@ footer {
     width: 60%;
   }
 
+  .image-article5 {
+    width: 60%;
+  }
+
   .image-container {
+    height: 145px;
+  }
+
+  .image-container-art5 {
     height: 145px;
   }
 

@@ -8,10 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <script>
-        function myFunction() {
-                var dots = document.querySelector('.dots');
-                var moreText = document.querySelector('.more');
-                var btnText = document.querySelector(".myBtn");
+        function myFunction(myBtn, more, dots) {
+                var dots = document.querySelector(dots);
+                var moreText = document.querySelector(more);
+                var btnText = document.querySelector(myBtn);
 
 
                 if (dots.style.display === "none") {
@@ -91,8 +91,8 @@
                         <div class= 'image-text'>CULTURA</div>
                     </div>
                     </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots1">...</span><span id="more1"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction('#myBtn1','#more1','#dots1')" id="myBtn1">Leer más...</button>
                 </div>
                 <div class = 'subchild2'>
                     <div class ='image-container'>
@@ -102,8 +102,8 @@
                         <div class= 'image-text'>CULTURA</div>
                     </div>
                     </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                        <button onclick="myFunction()" class="myBtn">Leer más...</button>  
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots2">...</span><span id="more2"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction('#myBtn2','#more2','#dots2')" id="myBtn2">Leer más...</button>  
                 </div>
             </article>
             <article class = 'child1'>
@@ -115,8 +115,8 @@
                         <div class= 'image-text'>CULTURA</div>
                     </div>
                     </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots3">...</span><span id="more3"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction('#myBtn3','#more3','#dots3')" id="myBtn3">Leer más...</button>
                 </div>
                 <div class = 'subchild4'>
                     <div class ='image-container'>
@@ -126,11 +126,21 @@
                         <div class= 'image-text'>CULTURA</div>
                     </div>
                     </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span class="dots">...</span><span class="more"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-                        <button onclick="myFunction()" class="myBtn">Leer más...</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots4">...</span><span id="more4"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                        <button onclick="myFunction('#myBtn4','#more4','#dots4')" id="myBtn4">Leer más...</button>
                 </div>
             </article>
-            <article class = 'child2'></article>
+            <article class = 'child2'>
+                <div class ='image-container-art5'>
+                    <img class ='image-article5' src='img/fushimi.jpg' width ='100%'>
+                <div class= 'text-container'>
+                    <div class='date'>6 de marzo de 2019</div>
+                    <div class= 'image-text'>CULTURA</div>
+                </div>
+                </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<span id="dots5">...</span><span id="more5"> Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <button onclick="myFunction('#myBtn5','#more5','#dots5')" id="myBtn5">Leer más...</button>  
+            </article>
         </section>
 
         <aside>
