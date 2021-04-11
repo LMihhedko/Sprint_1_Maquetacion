@@ -263,6 +263,10 @@ footer {
     position: relative;
     height: 210px;
   }
+
+  .image-container-art5 {
+    height: 460px;
+  }
 }
 
 /* MÓVIL */
