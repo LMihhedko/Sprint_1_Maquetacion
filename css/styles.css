@@ -207,12 +207,10 @@ section {
 
 .image-container {
   position: relative;
-  bottom: 1px;
 }
 
 .image-container-art5 {
   position: relative;
-  bottom: 1px;
 }
 
 .date {
@@ -296,7 +294,7 @@ footer {
     /* colocar section y aside */
     display: grid;
     gap: 1em;
-    grid-template-rows: 3fr 0.5fr;
+    grid-template-rows: 3fr 0.25fr;
     grid-template-columns: 1fr;
     grid-template-areas:
       "section"
