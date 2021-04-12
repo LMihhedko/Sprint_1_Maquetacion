@@ -107,7 +107,7 @@ h1 {
 
 .main {
   min-height: 25px;
-  background-color: #dcdcdc;
+  background-color: #968f8f;
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -177,12 +177,10 @@ section {
 
 .image-container {
   position: relative;
-  height: 250px;
 }
 
 .image-container-art5 {
   position: relative;
-  height: 525px;
 }
 
 .date {
@@ -204,7 +202,8 @@ p {
 #more1,
 #more2,
 #more3,
-#more4 {
+#more4,
+#more5 {
   display: none;
 }
 
@@ -344,14 +343,6 @@ footer {
 
   .image-article5 {
     width: 60%;
-  }
-
-  .image-container {
-    height: 145px;
-  }
-
-  .image-container-art5 {
-    height: 145px;
   }
 
   .text-container {
