@@ -2,23 +2,53 @@
   display: grid;
   gap: 1.6em;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header-container header-container header-container"
+    "main main main"
+    "footer footer footer";
 }
 
-/* HEADER AND NAV */
 .header-container {
-  max-height: 300px;
+  min-height: 200px;
   background-image: url("../img/fons.jpg");
   background-position: center center;
   background-size: cover;
   padding: 20px;
-}
+  grid-area: header-container;
 
-/* NAV */
+  /* colocar nav y header */
+  height: 90%;
+  display: grid;
+  gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "nav"
+    "header";
+}
 
 nav {
   min-height: 20px;
-  display: flex;
   padding: 20px;
+  grid-area: nav;
+
+  /* colocar box 1,2 y 3 */
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "box1 box2 box3";
+}
+
+.box1 {
+  min-height: 20px;
+  grid-area: box1;
+}
+
+.logo {
+  width: 70px;
+}
+
+.box2 {
+  min-height: 20px;
+  grid-area: box2;
 }
 
 label,
@@ -26,24 +56,31 @@ input {
   display: none;
 }
 
-.box1 {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ff8989;
+  border-radius: 5px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  float: left;
+}
+
+.box3 {
   min-height: 20px;
-  flex: 0 1 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 70px;
-}
-
-.social {
-  width: 25px;
-  height: 25px;
-  display: flex;
+  grid-area: box3;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
 }
 
 .social:hover {
@@ -51,10 +88,16 @@ input {
   border-radius: 5px;
 }
 
-.box2 {
-  min-height: 20px;
-  flex: 0 1 70%;
-  margin: 0 20px;
+header {
+  min-height: 25px;
+  padding: 20px;
+  background-color: #00000010;
+  grid-area: header;
+}
+
+h1 {
+  color: rgba(255, 118, 118, 0.699);
+  text-align: center;
 }
 
 /* LINKS */
@@ -72,95 +115,76 @@ i {
   font-weight: 500;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #ff8989;
-  border-radius: 5px;
-}
-
-ul {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0px;
-}
-
-li {
-  list-style-type: none;
-  padding: 10px;
-}
-
-/* HEADER */
-header {
-  min-height: 25px;
-  margin: 1em 0 0 0;
-  padding: 20px;
-  background-color: #00000010;
-}
-
-.box3 {
-  min-height: 20px;
-}
-
-h1 {
-  color: rgba(255, 118, 118, 0.699);
-  text-align: center;
-}
-
-/* MAIN */
-
 .main {
   min-height: 25px;
   background-color: #dcdcdc;
-  margin-top: 20px;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
+  grid-area: main;
+  /* colocar section y aside */
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-areas: "section aside";
 }
-
-/* SECTION */
 
 section {
   min-height: 25px;
-  margin-right: 20px;
   padding: 20px;
   background-color: #dcdcdc;
-  display: flex;
-  flex: 0 1 66%;
-  flex-direction: column;
+  grid-area: section;
+  /* colocar contenedor artículos */
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "child1"
+    "child2"
+    "child3";
 }
 
 .child1 {
-  min-height: 20px;
-  margin-bottom: 20px;
-  display: flex;
+  min-height: 25px;
+  background-color: #dcdcdc;
+  grid-area: child1;
+  /* colocar 2 cajas */
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "subchild1 subchild2";
 }
 
-.subchild1,
-.subchild2,
-.subchild3,
-.subchild4 {
-  height: 450px;
-  flex: 0 1 50%;
-  margin-right: 20px;
+.subchild1 {
+  min-height: 25px;
+  padding-bottom:20px;
   background-color: #ececec;
+  grid-area: subchild1;
+  border: 5px solid #ececec;
+}
+
+.subchild2 {
+  min-height: 25px;
+  padding-bottom:20px;
+  background-color: #ececec;
+  grid-area: subchild2;
   border: 5px solid #ececec;
 }
 
 .child2 {
-  min-height: 20px;
-  background-color: #70a3c4;
-  margin-right: 20px;
-  background-color: #ececec;
-  border: 5px solid #ececec;
+  min-height: 25px;
+  background-color: #dcdcdc;
+  grid-area: child2;
+  /* colocar 2 cajas */
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "subchild1 subchild2";
 }
 
 .child3 {
-  min-height: 20px;
-  background-color: #feea85;
-  margin-bottom: 20px;
+  min-height: 25px;
+  padding-bottom:20px;
+  background-color: #ececec;
+  grid-area: child3;
+  border: 5px solid #ececec;
 }
 
 /* ARTICULOS */
@@ -183,12 +207,12 @@ section {
 
 .image-container {
   position: relative;
-  height: 250px;
+  height: 290px;
 }
 
 .image-container-art5 {
   position: relative;
-  height: 525px;
+  height: 600px;
 }
 
 .date {
@@ -224,199 +248,40 @@ button {
   outline: inherit;
 }
 
-/* ASIDE */
-
 aside {
   min-height: 25px;
   background-color: #f73f52;
-  flex: 0 1 33%;
+  grid-area: aside;
   padding: 20px;
+  /* colocar 2 cajas */
+  display: grid;
+  align-items: start;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "child4"
+    "child5";
 }
 
-/*FOOTER*/
+.child4 {
+  min-height: 25px;
+  background-color: #feea85;
+  grid-area: child4;
+}
+
+.child5 {
+  min-height: 25px;
+  background-color: #feea85;
+  grid-area: child5;
+}
 
 .footer-container {
   min-height: 20px;
   background-color: black;
-  margin-top: 20px;
   padding: 20px;
+  grid-area: footer;
 }
 
 footer {
   min-height: 20px;
   background-color: #e6af2e;
-}
-
-/* MEDIA QUERIES */
-
-/* TABLET */
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .main {
-    background-color: #feff03;
-    flex-direction: column;
-  }
-
-  section {
-    margin-right: 0px;
-  }
-
-  aside {
-    margin-top: 20px;
-  }
-
-  .image-container {
-    position: relative;
-    height: 210px;
-  }
-}
-
-/* MÓVIL */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .box2 {
-    margin: 20px 0px;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  .main {
-    height: auto;
-    background-color: #d3d3b4;
-    flex-direction: column;
-  }
-
-  section {
-    display: inline-block;
-    flex: 0 1 auto;
-    margin-right: 0px;
-    background-color: #7a7f81;
-  }
-
-  .child1 {
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-
-  .subchild1,
-  .subchild2,
-  .subchild3,
-  .subchild4 {
-    margin-right: 0px;
-    background-color: #62959c;
-  }
-
-  .subchild4 {
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 0.7em;
-  }
-
-  .child2 {
-    margin-right: 0px;
-    background-color: #62959c;
-  }
-
-  .child3 {
-    background-color: #a3ddcb;
-  }
-
-  aside {
-    background-color: #fd7b54;
-    margin-top: 20px;
-    padding-bottom: 0px;
-    flex: 0 1 10%;
-  }
-
-  .header-container {
-    background-image: url("../img/fons_petit.jpg");
-  }
-
-  .image-article {
-    width: 60%;
-  }
-
-  .image-article5 {
-    width: 60%;
-  }
-
-  .image-container {
-    height: 145px;
-  }
-
-  .image-container-art5 {
-    height: 145px;
-  }
-
-  .text-container {
-    width: 60%;
-  }
-
-  /* MENU HAMBURGUESA */
-
-  ul {
-    display: none;
-    position: absolute;
-    top: 65px;
-    left: 90px;
-    width: 50%;
-  }
-
-  input:checked ~ ul {
-    display: block;
-  }
-
-  input {
-    display: none;
-  }
-
-  label {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    position: absolute;
-    top: 30px;
-    right: 50px;
-  }
-
-  /* ESTILOS  LINKS MENU HAMBURGUESA */
-
-  li {
-    display: block;
-    width: 100%;
-    border: 1px solid #6e6e69;
-    margin: 2px 15px;
-    border-radius: 20px;
-    text-align: center;
-    padding: 0px;
-  }
-
-  i {
-    font-size: 10px;
-  }
-
-  .icon-letters {
-    font-size: 0.6em;
-  }
-
-  .logo {
-    position: absolute;
-    top: 5px;
-    left: 160px;
-  }
 }
