@@ -1,3 +1,9 @@
+.container {
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* HEADER AND NAV */
 .header-container {
   max-height: 300px;
