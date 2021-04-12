@@ -325,7 +325,7 @@ footer {
     /* colocar section y aside */
     display: grid;
     gap: 1em;
-    grid-template-rows: 3fr 0.5fr;
+    grid-template-rows: 3fr 0.2fr;
     grid-template-columns: 1fr;
     grid-template-areas:
       "section"
