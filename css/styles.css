@@ -117,7 +117,7 @@ i {
 
 .main {
   min-height: 25px;
-  background-color: #dcdcdc;
+  background-color: #bebcbc;
   padding: 20px;
   grid-area: main;
   /* colocar section y aside */
@@ -154,7 +154,7 @@ section {
 
 .subchild1 {
   min-height: 25px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   background-color: #ececec;
   grid-area: subchild1;
   border: 5px solid #ececec;
@@ -162,7 +162,7 @@ section {
 
 .subchild2 {
   min-height: 25px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   background-color: #ececec;
   grid-area: subchild2;
   border: 5px solid #ececec;
@@ -181,7 +181,7 @@ section {
 
 .child3 {
   min-height: 25px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   background-color: #ececec;
   grid-area: child3;
   border: 5px solid #ececec;
@@ -207,12 +207,12 @@ section {
 
 .image-container {
   position: relative;
-  height: 290px;
+  bottom: 1px;
 }
 
 .image-container-art5 {
   position: relative;
-  height: 600px;
+  bottom: 1px;
 }
 
 .date {
@@ -234,7 +234,8 @@ p {
 #more1,
 #more2,
 #more3,
-#more4 {
+#more4,
+#more5 {
   display: none;
 }
 
@@ -255,8 +256,8 @@ aside {
   padding: 20px;
   /* colocar 2 cajas */
   display: grid;
-  align-items: start;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 25px 25px;
+  gap: 1em;
   grid-template-areas:
     "child4"
     "child5";
@@ -284,4 +285,66 @@ aside {
 footer {
   min-height: 20px;
   background-color: #e6af2e;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .main {
+    /* colocar section y aside */
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 3fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "section"
+      "aside";
+  }
+}
+
+/* MÓVIL */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-container {
+    background-image: url("../img/fons_petit.jpg");
+  }
+
+  header {
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+  }
+
+  .main {
+    /* colocar section y aside */
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 3fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "section"
+      "aside";
+  }
+
+  .child1 {
+    /* colocar 2 cajas */
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: "subchild1" "subchild2";
+  }
+
+  .child2 {
+    /* colocar 2 cajas */
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: "subchild1" "subchild2";
+  }
 }
